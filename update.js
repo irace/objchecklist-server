@@ -1,7 +1,7 @@
 var fs      = require('fs')
   , objcio  = require('./objcio.js');
 
-function update (callback) {
+function update(callback) {
   objcio(function (error, issues) {
     if (error) {
       console.log(error);
@@ -19,7 +19,7 @@ function update (callback) {
   });
 }
 
-function serialize (object, callback) {
+function serialize(object, callback) {
   fs.writeFile('data.json', JSON.stringify(object, null, 2), function (error) {
     if (error) {
       console.log(error);

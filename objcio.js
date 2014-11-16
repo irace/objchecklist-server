@@ -12,7 +12,7 @@ module.exports = function (callback) {
   });
 };
 
-function scrape_issue_data ($) {
+function scrape_issue_data($) {
   return $('.issue .issue-content').map(function () {
     var $issue = $(this);
 
